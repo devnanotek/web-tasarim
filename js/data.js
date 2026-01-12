@@ -337,5 +337,233 @@ const questions = [
         question: "box-sizing: border-box; kullanılmazsa ne olur?",
         options: ["Padding yok olur", "Border silinir", "Padding + border genişliği artırır", "Margin kalkar"],
         answer: 2 // C
+    },
+
+    // YENİ EKLENEN SORULAR (Ders Notlarından)
+    {
+        id: 49,
+        category: "CSS",
+        question: "CSS'in açılımı nedir?",
+        options: ["Computer Style Sheets", "Creative Style System", "Cascading Style Sheets", "Colorful Style Sheets"],
+        answer: 2 // C
+    },
+    {
+        id: 50,
+        category: "CSS",
+        question: "CSS dosyalarının uzantısı nedir?",
+        options: [".html", ".xml", ".js", ".css"],
+        answer: 3 // D
+    },
+    {
+        id: 51,
+        category: "CSS",
+        question: "Harici bir CSS dosyasını HTML sayfasına bağlamak için hangi etiket kullanılır?",
+        options: ["<style>", "<link>", "<script>", "<css>"],
+        answer: 1 // B
+    },
+    {
+        id: 52,
+        category: "CSS",
+        question: "Aşağıdakilerden hangisi kenarlık (border) stili çeşitlerinden biri değildir?",
+        options: ["Solid (Çizgi)", "Dotted (Noktalı)", "Liquid (Sıvı)", "Dashed (Kesik Çizgili)"],
+        answer: 2 // C
+    },
+    {
+        id: 53,
+        category: "CSS",
+        question: "Farenin imleci bir öğenin üzerine geldiğinde stilin değişmesini sağlayan seçici hangisidir?",
+        options: [":active", ":hover", ":focus", ":visited"],
+        answer: 1 // B
+    },
+    {
+        id: 54,
+        category: "CSS",
+        question: "Aynı sayfada birden fazla HTML elementine aynı özellikleri vermek için kullanılan seçici türü hangisidir?",
+        options: ["ID (#)", "Class (.)", "Tag", "Universal (*)"],
+        answer: 1 // B
+    },
+    {
+        id: 55,
+        category: "CSS",
+        question: "CSS dosyasında ID seçicisi hangi işaretle belirtilir?",
+        options: [". (Nokta)", "# (Diyez)", "* (Yıldız)", "@ (Et)"],
+        answer: 1 // B
+    },
+    {
+        id: 56,
+        category: "CSS",
+        question: "CSS dosyasında Class (sınıf) seçicisi hangi işaretle belirtilir?",
+        options: [". (Nokta)", "# (Diyez)", "& (Ve)", "$ (Dolar)"],
+        answer: 0 // A
+    },
+    {
+        id: 57,
+        category: "CSS",
+        question: "Bir elementin dört kenarına DIŞTAN boşluk vermeye yarayan özellik hangisidir?",
+        options: ["Padding", "Margin", "Border", "Spacing"],
+        answer: 1 // B
+    },
+    {
+        id: 58,
+        category: "CSS",
+        question: "'margin: 25px 50px 75px 100px;' kodunda 50px hangi yönü temsil eder?",
+        options: ["Üst", "Sağ", "Alt", "Sol"],
+        answer: 1 // B (Top Right Bottom Left)
+    },
+    {
+        id: 59,
+        category: "CSS",
+        question: "Bir elementin dört kenarına İÇ boşluk vermeye yarayan özellik hangisidir?",
+        options: ["Margin", "Border", "Padding", "Space"],
+        answer: 2 // C
+    },
+    {
+        id: 60,
+        category: "CSS",
+        question: "Sırasız bir listenin başındaki madde işaretlerini kaldırmak için hangi kod kullanılır?",
+        options: ["list-style-type: none;", "text-decoration: none;", "border: none;", "display: hidden;"],
+        answer: 0 // A
+    },
+    {
+        id: 61,
+        category: "CSS",
+        question: "Linklerin altındaki çizgiyi kaldırmak için hangi özellik kullanılır?",
+        options: ["border-bottom: none;", "text-decoration: none;", "underline: none;", "font-style: normal;"],
+        answer: 1 // B
+    },
+    {
+        id: 62,
+        category: "CSS",
+        question: "1 em değeri yaklaşık kaç piksele eşittir?",
+        options: ["8px", "10px", "12px", "16px"],
+        answer: 3 // D
+    },
+
+    // FORM ve HTML EKLERİ
+    {
+        id: 63,
+        category: "HTML",
+        question: "Web sayfalarını dinamik hale getirip kullanıcı etkileşimi sağlayan yapı nedir?",
+        options: ["Table", "Form", "Div", "Span"],
+        answer: 1 // B
+    },
+    {
+        id: 64,
+        category: "HTML",
+        question: "Hangi input türü girilen karakterleri gizleyerek (nokta veya yıldız şeklinde) gösterir?",
+        options: ["text", "hidden", "password", "submit"],
+        answer: 2 // C
+    },
+    {
+        id: 65,
+        category: "HTML",
+        question: "Birden fazla seçenek arasından SADECE BİR tane seçim yapılmasını sağlayan form elemanı hangisidir?",
+        options: ["Checkbox", "Radio", "Textarea", "Select"],
+        answer: 1 // B
+    },
+    {
+        id: 66,
+        category: "HTML",
+        question: "Geniş metin alanı (örneğin yorum yazmak için) oluşturmak için hangi etiket kullanılır?",
+        options: ["<input type='text'>", "<textarea>", "<p>", "<text>"],
+        answer: 1 // B
+    },
+    {
+        id: 67,
+        category: "HTML",
+        question: "HTML'in açılımı nedir?",
+        options: ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Mark Language", "Home Tool Markup Language"],
+        answer: 0 // A
+    },
+    {
+        id: 68,
+        category: "HTML",
+        question: "Sayfa ile ilgili başlık ve tanımlamaların yer aldığı, kullanıcıya doğrudan görünmeyen bölüm hangisidir?",
+        options: ["<body>", "<head>", "<title>", "<footer>"],
+        answer: 1 // B
+    },
+    {
+        id: 69,
+        category: "HTML",
+        question: "Ziyaretçinin gördüğü tüm içeriğin yer aldığı sayfa bölümü hangisidir?",
+        options: ["<head>", "<meta>", "<body>", "<form>"],
+        answer: 2 // C
+    },
+    {
+        id: 70,
+        category: "HTML",
+        question: "Paragrafı ortalamak için <p> etiketine hangi parametre eklenir? (Örn: <p ...='center'>)",
+        options: ["valign", "align", "text-align", "justify"],
+        answer: 1 // B
+    },
+    {
+        id: 71,
+        category: "HTML",
+        question: "En büyük başlık etiketi hangisidir?",
+        options: ["<h6>", "<h1>", "<head>", "<title>"],
+        answer: 1 // B
+    },
+    {
+        id: 72,
+        category: "HTML",
+        question: "Metni italik yazdırmak için hangi etiket kullanılır?",
+        options: ["<b>", "<u>", "<i>", "<em>"],
+        answer: 2 // C
+    },
+    {
+        id: 73,
+        category: "HTML",
+        question: "Metnin altını çizmek için hangi etiket kullanılır?",
+        options: ["<u>", "<i>", "<b>", "<s>"],
+        answer: 0 // A
+    },
+    {
+        id: 74,
+        category: "HTML",
+        question: "Bir alt satıra geçmek için kullanılan etiket hangisidir?",
+        options: ["<lb>", "<br>", "<break>", "<p>"],
+        answer: 1 // B
+    },
+    {
+        id: 75,
+        category: "HTML",
+        question: "Kimyasal formüllerde (örn: H₂O) alt simge oluşturmak için hangi etiket kullanılır?",
+        options: ["<sup>", "<sub>", "<small>", "<bottom>"],
+        answer: 1 // B
+    },
+    {
+        id: 76,
+        category: "HTML",
+        question: "Metne arka plan rengi vererek vurgulamak için hangi etiket kullanılır?",
+        options: ["<highlight>", "<b>", "<mark>", "<color>"],
+        answer: 2 // C
+    },
+    {
+        id: 77,
+        category: "HTML",
+        question: "Linkin yeni bir sekmede açılmasını sağlayan target değeri nedir?",
+        options: ["_self", "_parent", "_blank", "_new"],
+        answer: 2 // C
+    },
+    {
+        id: 78,
+        category: "HTML",
+        question: "Resim yüklenemediğinde yerine görünecek metni belirten özellik hangisidir?",
+        options: ["src", "title", "alt", "href"],
+        answer: 2 // C
+    },
+    {
+        id: 79,
+        category: "HTML",
+        question: "Tabloda hücreleri yatay olarak birleştirmek (genişletmek) için hangi özellik kullanılır?",
+        options: ["rowspan", "colspan", "merge", "span"],
+        answer: 1 // B
+    },
+    {
+        id: 80,
+        category: "HTML",
+        question: "Sayfada yatay bir çizgi oluşturmak için hangi etiket kullanılır?",
+        options: ["<line>", "<br>", "<hr>", "<tr>"],
+        answer: 2 // C
     }
 ];
