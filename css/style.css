@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6c5ce7;
+    --success-color: #00cec9;
+    --danger-color: #ff7675;
+    --background-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-color: #2d3436;
+}
+
+body {
+    background: var(--background-gradient);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    min-height: 100vh;
+    padding-bottom: 80px; /* Space for fixed bottom bar */
+}
+
+/* Glassmorphism Header */
+.quiz-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Question Cards */
+.question-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--primary-color);
+}
+
+.question-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.question-card h5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+.badge-category {
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Options Styling */
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-item {
+    padding: 10px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.option-item:hover {
+    background-color: #f1f2f6;
+    border-color: var(--primary-color);
+}
+
+.option-item.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(74, 144, 226, 0.1);
+    font-weight: 600;
+}
+
+/* Checkbox/Radio Custom Styling */
+.option-radio {
+    margin-right: 15px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Result Styles */
+.correct-answer {
+    background-color: rgba(0, 206, 201, 0.2) !important;
+    border-color: var(--success-color) !important;
+    color: #006266;
+}
+
+.wrong-answer {
+    background-color: rgba(255, 118, 117, 0.2) !important;
+    border-color: var(--danger-color) !important;
+    color: #d63031;
+}
+
+.correct-badge {
+    margin-left: auto;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.wrong-badge {
+    margin-left: auto;
+    color: var(--danger-color);
+    font-weight: bold;
+}
+
+/* Fixed Bottom Bar */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-calculate {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-calculate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.6);
+}
+
+.btn-calculate:active {
+    transform: scale(0.95);
+}
+
+/* Score Modal Customization */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+}
+.modal-header {
+    background: var(--background-gradient);
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+.score-display {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.score-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #636e72;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .question-card {
+        padding: 1rem;
+    }
+    .btn-calculate {
+        width: 90%;
+        padding: 10px;
+    }
+}
